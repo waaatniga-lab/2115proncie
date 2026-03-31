@@ -1,7 +1,7 @@
 
 var params = new URLSearchParams(window.location.search);
 
-function forwardToId(params){
+function sendTo(params){
     const target = "id.html?" + params.toString();
     window.location.href = target;
 }
