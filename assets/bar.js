@@ -1,9 +1,8 @@
 
 var params = new URLSearchParams(window.location.search);
 
-function sendTo(params){
-    const target = "id.html?" + params.toString();
-    window.location.href = target;
+function sendTo(url){
+    location.href = `/${url}?` + params;
 }
 
 document.querySelectorAll(".bottom_element_grid").forEach((element) => {
